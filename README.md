@@ -1,7 +1,7 @@
-# Verba 
-## 🐕 The Golden RAGtriever
+# HTINA Tool
+## 💡 Where knowledge comes together
 
-Welcome to Verba: The Golden RAGtriever, an open-source application designed to offer an end-to-end, streamlined, and user-friendly interface for Retrieval-Augmented Generation (RAG) out of the box. In just a few easy steps, explore your datasets and extract insights with ease, either locally or through LLM providers such as OpenAI, Cohere, and HuggingFace.
+Welcome to the HTINA tool, a fork of Verba: The Golden RAGtriever, an open-source application designed to offer an end-to-end, streamlined, and user-friendly interface for Retrieval-Augmented Generation (RAG) out of the box. In just a few easy steps, explore your datasets and extract insights with ease, either locally or through LLM providers such as OpenAI, Cohere, and HuggingFace.
 
 ```
 pip install goldenverba
@@ -10,7 +10,7 @@ pip install goldenverba
 [![Weaviate](https://img.shields.io/static/v1?label=powered%20by&message=Weaviate%20%E2%9D%A4&color=green&style=flat-square)](https://weaviate.io/) 
 [![PyPi downloads](https://static.pepy.tech/personalized-badge/goldenverba?period=total&units=international_system&left_color=grey&right_color=orange&left_text=pip%20downloads)](https://pypi.org/project/goldenverba/) [![Docker support](https://img.shields.io/badge/Docker_support-%E2%9C%93-4c1?style=flat-square&logo=docker&logoColor=white)](https://docs.docker.com/get-started/) [![Demo](https://img.shields.io/badge/Check%20out%20the%20demo!-yellow?&style=flat-square&logo=react&logoColor=white)](https://verba.weaviate.io/)
 
-![Demo of Verba](https://github.com/weaviate/Verba/blob/dev/img/verba.gif)
+<img width="1727" alt="Screenshot 2024-01-16 at 17 27 27" src="https://github.com/uibk-hti-1/htina-rag-tool/assets/47747733/11b67dea-5219-43bf-821c-17357ffc0618">
 
 - [Verba](#verba)
   - [🎯 What Is Verba?](#🎯-what-is-verba)
