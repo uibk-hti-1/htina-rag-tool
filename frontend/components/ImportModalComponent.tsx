@@ -149,7 +149,8 @@ const ImportModal: React.FC<ImportModalProps> = ({ onClose, apiHost }) => {
         onDrop,
         accept: {
             'text/txt': ['.txt', '.md', '.mdx', '.pdf'],
-            'text/json': ['.json']
+            'text/json': ['.json'],
+            'text/html': ['.html', '.htm'],
         }
     });
 

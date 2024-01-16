@@ -269,6 +269,13 @@ class VerbaManager:
             self.installed_libraries["PyPDF2"] = False
 
         try:
+            import unstructured
+
+            self.installed_libraries["unstructured"] = True
+        except Exception:
+            self.installed_libraries["unstructured"] = False
+
+        try:
             import tiktoken
 
             self.installed_libraries["tiktoken"] = True

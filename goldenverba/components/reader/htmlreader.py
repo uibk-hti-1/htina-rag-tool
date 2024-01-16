@@ -10,7 +10,7 @@ from goldenverba.components.reader.document import Document
 from goldenverba.components.reader.interface import InputForm, Reader
 
 try:
-    from unstructured.partition.html import partition_html
+    from unstructured.partition.auto import partition
 except Exception:
     msg.warn("Unstructured not installed, your base installation might be corrupted.")
 
@@ -23,9 +23,9 @@ class HTMLReader(Reader):
     def __init__(self):
         super().__init__()
         self.file_types = [".html"]
-        self.requires_library = ["PyPDF2"]
+        self.requires_library = ["unstructured"]
         self.name = "HTMLReader"
-        self.description = "Reads HTML files"
+        self.description = "Reads HTML files using unstructured"
         self.input_form = InputForm.UPLOAD.value
 
     def load(
@@ -100,12 +100,10 @@ class HTMLReader(Reader):
         """
         documents = []
         full_text = ""
-
-        elements = partition_html(filename=file_path)
-
+        elements = partition(filename=file_path)
         for element in elements:
-            if "text" in element:
-                text = element["text"]
+            if hasattr(element, "text"):
+                text = element.text
                 full_text += text + " "
 
         document = Document(
@@ -121,7 +119,7 @@ class HTMLReader(Reader):
         return documents
 
     def load_directory(self, dir_path: Path, document_type: str) -> list[Document]:
-        """Loads .pdf files from a directory and its subdirectories.
+        """Loads .html files from a directory and its subdirectories.
 
         @param dir_path : Path - Path to directory
         @param document_type : str - Document Type

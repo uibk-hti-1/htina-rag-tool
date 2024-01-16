@@ -95,24 +95,9 @@ export default function StatusPage() {
                 <div className="mb-2">
                     <div className="flex justify-between items-center w-full"> {/* <-- flexbox container */}
                         <div className="flex-none">
-                            <div className="bg-yellow-200 border-2 border-gray-800 rounded-lg shadow-lg animate-pop-in hover-container mr-4 ">
-                                <img src={`${bgUrl}verba.png`} alt="Verba Logo" className=" w-24 h-24 shadow-lg" />
-                            </div>
+                            <img src={`${bgUrl}hti_logo.png`} alt="HTI Logo" className=" h-24" />
                         </div>
-                        <div className="flex-1">
-                            <h1 className=" text-6xl font-bold">Verba</h1>
-                            <div className="flex text-lg">
-                                <span className="bg-opacity-0 rounded px-2 py-1 hover-container animate-pop-in">
-                                    The
-                                </span>
-                                <span className="bg-opacity-0 rounded font-bold px-2 py-1 hover-container animate-pop-in-late">
-                                    Golden
-                                </span>
-                                <span className="bg-yellow-200 rounded px-2 py-1 hover-container animate-pop-more-late">
-                                    RAGtriever
-                                </span>
-                            </div>
-                        </div>
+                        <div className=" w-4" />
                     </div>
                 </div>
                 <div className="flex mt-16 space-x-4 w-full justify-center items-start"> {/* Adjusted container for the three sections */}

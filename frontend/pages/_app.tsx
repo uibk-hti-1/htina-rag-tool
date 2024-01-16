@@ -23,13 +23,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [googleTag, setGoogleTag] = useState<string>("");
 
   useEffect(() => {
-    document.body.style.backgroundImage = `url('${bgUrl + 'background.png'}')`;
-    document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundRepeat = "no-repeat";
-  }, []);
-
-  useEffect(() => {
     const fetchEnvironment = async () => {
       try {
         const response = await fetch(apiHost + "/api/get_google_tag", {
